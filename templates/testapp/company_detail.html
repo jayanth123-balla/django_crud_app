@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+{%extends 'testapp/base.html'%} 
+{%block body_block%} 
+<h1>Company Information</h1><hr> 
+<ol> 
+<h2><li>Company Name: {{company.name|upper}}</li></h2> 
+<h2><li>Company Location: {{company.location|title}}</li></h2> 
+<h2><li>Company CEO: {{company.ceo|title}}</li></h2> 
+<h2>Employee Information</h2> 
+{%for emp in company.employees.all%} 
+<ul> 
+<li>Employee Number:{{emp.eno}}</li> 
+<li>Employee Name:{{emp.name}}</li> 
+<li>Employee Salary:{{emp.salary}}</li> <hr> 
+</ul> 
+{%endfor%} 
+</ol> 
+<a href="/update/{{company.id}}" class='btn btn-danger'>Update</a> 
+<a href="/delete/{{company.id}}" class='btn btn-danger'>Delete</a> 
+{%endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="itr">
+<head>
+   <meta charset="utf=8">
+   <title></title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <style>
+    body{
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://image.freepik.com/free-photo/google-application-logo-3d-rendering-black-background_41204-6982.jpg");
+ 
+ }
+.jumbotron{
+ background: blue;
+ color:blue;
+}
+#a{
+    color:blue;
+}
+h1 {
+color: red;
+}
+li{
+color: red;
+}
+h2 {
+color: blue;
+}
+h4 {
+color: blue;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand"  href="/companies">Companies</a>
+</div>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav mr-auto">
+<div class="navbar-nav">
+</div>
+</ul>
+<ul class ="nav navbar-nav navbar-right">
+<li><a class="nav-item nav-link" href="/signup"><b>Sign Up</b></a></li>
+<li><a class="nav-item nav-link" href="/accounts/login"><b>Login</b></a></li>
+<li><a class="nav-item nav-link" href="/accounts/logout"><b>logout</b></a></li>
+</ul>
+</div>
+</div>
+</nav>
+{%block body_block%}
+{%endblock%}
+</body>
+</html>
